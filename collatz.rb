@@ -5,6 +5,7 @@ def collatz(n)
     chain << n/2
   else 
     chain << n * 3 + 1 
+  collatz 
   end 
   puts chain.to_s.split("->")
 end
